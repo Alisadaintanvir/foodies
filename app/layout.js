@@ -1,5 +1,5 @@
 import "./globals.css";
-import MainHeader from "@/components/MainHeader";
+import MainHeader from "@/components/header/MainHeader";
 
 export const metadata = {
   title: "NextLevel Food",
@@ -9,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <div className="header-background">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 320">
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop
